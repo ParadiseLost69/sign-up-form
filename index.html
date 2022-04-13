@@ -27,33 +27,53 @@
     <div class="card">
       <form action="get">
         <div class="top-row">
+          <div class = "names"> 
+            <div class = "first-name">
           <label for="first-name">FIRST NAME</label>
-          <input type="text" name="first-name" id="first-name" required />
-          <!--last name-->
-          <label for="last-name">LAST NAME</label>
-          <input type="text" name="last-name" id="last-name" required />
+          <input type="text" name="first-name" id="first-name" placeholder="First Name" required />
         </div>
+          <!--last name-->
+          <div class = "last-name"> 
+          <label for="last-name">LAST NAME</label>
+          <input type="text" name="last-name" id="last-name" placeholder="Last Name" required />
+        </div>
+        </div>
+      </div>
         <div class="middle-row">
+          <div class="contact">
+            <div class="email">
           <label for="email">EMAIL</label>
-          <input type="email" name="email" id="email" required />
+          <input type="email" name="email" id="email" placeholder="Email" required />
+        </div>
+        <div class="phone">
           <label for="phone-number">PHONE NUMBER</label>
           <input
             type="tel"
             id="phone-number"
             name="phone-number"
-            pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"
+            pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" placeholder="Phone Number"
             required
           />
         </div>
+        </div>
+      </div>
         <div class="bottom-row">
+          <div class="passwords">
+            <div class="error">
           <label for="password">PASSWORD</label>
           <input type="password" name="password" id="password" />
+        </div>
+        <div class="confirm">
+          <div class="error">
           <label for="confirm-password">CONFIRM PASSWORD</label>
           <input
             type="password"
             name="confirm-password"
             id="confirm-password"
           />
+        </div>
+      </div>
+        </div>
         </div>
       
     </div>

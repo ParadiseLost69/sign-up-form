@@ -26,7 +26,6 @@ header {
 .logo img[src="/images/odin-lined.png"] {
   width: clamp(2vw, 7vw, 7vw);
 }
-
 .logo {
   display: flex;
   color: white;
@@ -63,18 +62,27 @@ header {
   background-color: #ffffff;
   box-shadow: 0px 3px 4px grey;
   width: 100%;
-  height: 20vh;
+  height: 25vh;
   font-size: clamp(0.5rem, 0.5rem, 1rem);
-  display: block;
-  justify-content: center;
+  justify-content: flex-start;
+  align-items: center;
+  overflow: visible;
 }
 
 .top-row,
 .middle-row,
 .bottom-row {
   display: flex;
-  padding: 10px;
+  padding: 5px;
   margin: 1rem;
+}
+
+.names,
+.contact,
+.passwords {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
 }
 
 label {
@@ -91,9 +99,30 @@ input {
   margin: 4px;
 }
 
-#first-name {
+#first-name,
+#last-name,
+#email,
+#phone-number,
+#password,
+#confirm-password {
   display: block;
 }
+
+/*DEFAULT COLORS*/
+.error > input {
+  appearance: none;
+  border-radius: 20px;
+  border: 2px solid red;
+}
+
+input:focus {
+  background-color: #456d313b;
+}
+
+::placeholder {
+  color: rgba(128, 128, 128, 0.486);
+}
+
 /*The Bottom */
 button {
   background-color: #596d48;
@@ -105,4 +134,7 @@ button {
   font-size: 16px;
   margin: 10px;
   border-radius: 7px;
+}
+.bottom {
+  margin: 1rem;
 }
